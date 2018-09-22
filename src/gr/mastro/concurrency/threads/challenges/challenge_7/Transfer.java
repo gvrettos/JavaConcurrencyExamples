@@ -13,8 +13,7 @@ public class Transfer implements Runnable {
 
 	@Override
 	public void run() {
-		while (!sourceAccount.transfer(destinationAccount, amount))
-			continue;
+		while (!sourceAccount.transfer(destinationAccount, amount));
 		System.out.printf("%s completed\n", Thread.currentThread().getName());
 	}
 
