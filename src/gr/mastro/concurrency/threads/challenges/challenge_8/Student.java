@@ -8,7 +8,7 @@ class Student {
         this.tutor = tutor;
     }
  
-    public synchronized void startStudy() {
+    public void startStudy() {
         // study
         System.out.println("Student is studying");
     }
